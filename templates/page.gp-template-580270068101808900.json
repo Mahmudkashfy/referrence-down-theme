@@ -1,0 +1,39 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_580270101236810500": {
+      "settings": {
+        "checksum": "5fe18789d9d0e272ceac3d3df47232e7c339e686f61b93cba6222305a03adc1a_1_1_1_0__1",
+        "gg0n1-5D7MO_text": "<p>Years Services Provide</p>",
+        "gg2gugqy1vQ_text": "<p>Pinnacle Dye Sublimation Paper</p>",
+        "gg5Y_v-fPe9_text": "1k+",
+        "gg99g1Q39zJ_label": "<p>Search</p>",
+        "ggJ49hvLKrm_text": "<p>Papers Name</p>",
+        "ggJE5DRA9z6_text": "<p>Premier Manufacturer &amp; Supplier of Specialty Coated Substrates for Printing Industry.</p>",
+        "ggSwZCntBvg_text": "<strong>Synthetic &amp; Specialty Substrates</strong> <i>Supplier</i>",
+        "ggUUUETsJ8U_text": "16+",
+        "ggdN-SOePGX_text": "<p>Papers Name</p>",
+        "ggiMvf5IOv0_text": "<p>8.5\" x 11\"</p>",
+        "ggmbUG_AyHQ_text": "Find Your Best Printing Papers",
+        "ggmhGBkfpJC_text": "<p>Industry-leading supplier of high-quality printing substrates, specialty materials, and innovative solutions for professional graphics applications.</p>",
+        "ggncs7w4l91_text": "<p><strong>1550+</strong> Happy Customers</p>",
+        "ggoZCCjXqod_text": "<p>HappyCustomers</p>",
+        "ggojwP97BKN_label": "<p>&nbsp;</p><p>Browse Products</p>",
+        "ggpsEUfiwcG_label": "<p>&nbsp;</p><p>Browse Products</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-580270101236810500"
+    }
+  },
+  "order": [
+    "gp_section_580270101236810500"
+  ]
+}
