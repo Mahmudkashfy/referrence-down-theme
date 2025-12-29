@@ -1,12 +1,17 @@
 <div>
-    <p class="text-center">This is announcement bar</p>
+    <p class="text-center">{% section.settings.announce %}</p>
 </div>
 
 {% schema %}
     {
         "name": "announcement",
         "settings": [
-        
+        {
+            "type": "text",
+            "id": "announce",
+            "label": "Announcement Text",
+            "default": "Free delivary up to 1000 TK order   "
+        }
         ]
     }
 {% endschema %}
