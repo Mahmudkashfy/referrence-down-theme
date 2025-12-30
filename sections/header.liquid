@@ -1,8 +1,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand text-bold " href="{{ shop.url }}">            
-           {% if settings.logo != blank %}
-              {{ settings.logo | image_url: width: 180 | image_tag: alt: shop.name }}
+           {% if section.settings.logo != blank %}
+              {{ section.settings.logo | image_url: width: 180 | image_tag: alt: shop.name }}
 
            {% else %} 
               {{ shop.name }}
@@ -50,6 +50,12 @@
   {
     "name": "header",
     "settings": [
+      
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Select Logo"
+        },
         {
           "type": "link_list",
           "id": "menu",
