@@ -2,7 +2,7 @@
         <div class="container-fluid">
           <a class="navbar-brand text-bold " href="{{ shop.url }}">            
            {% if settings.logo != blank %}
-              <img src="{{ settings.logo | img_url: "small" }}" width="auto" height="auto" alt="{{ shop.name }}">
+              <img src="{{ settings.logo | img_url: 'small' }}" alt="{{ shop.name }}">
            {% else %} 
               {{ shop.name }}
            {% endif %}          
@@ -16,7 +16,7 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="{{ link.url }}">{{ link.title }}</a>
                 </li>
-                {% endfor %}        
+                     
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
@@ -29,7 +29,8 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                     {% endif %}
                   </ul>
-                </li>       
+                </li>    
+                {% endfor %}      
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
