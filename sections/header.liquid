@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand text-bold " href="{{ shop.url }}">            
@@ -65,71 +64,3 @@
     ]
   }
 {% endschema %}
-=======
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand text-bold " href="{{ shop.url }}">            
-           {% if section.settings.logo != blank %}
-              <img src="{{ section.settings.logo | img_url: "small" }}" height="100" width="auto">
-
-           {% else %} 
-              {{ shop.name }}
-           {% endif %}          
-          </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% for link in section.settings.menu.links %}
-                {% if link.links.size > 0 %}
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ link.url }}" data-bs-toggle="dropdown">
-                      {{ link.title }}
-                    </a>
-                    <ul class="dropdown-menu">
-                      {% for child in link.links %}
-                        <li>
-                          <a class="dropdown-item" href="{{ child.url }}">
-                            {{ child.title }}
-                          </a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                {% else %}
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ link.url }}">
-                      {{ link.title }}
-                    </a>
-                  </li>
-                {% endif %}
-              {% endfor %}    
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-
-{% schema %}
-  {
-    "name": "header",
-    "settings": [
-      
-        {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "Select Logo"
-        },        
-        {
-          "type": "link_list",
-          "id": "menu",
-          "label": "Select Menu"
-        }
-    ]
-  }
-{% endschema %}
->>>>>>> ee871fa864fc81d5d3d5b5255839c2424429f4bb
